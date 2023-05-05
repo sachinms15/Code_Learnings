@@ -1,0 +1,4 @@
+   public async Task<CreatePR_Response> InsertDatatoPR_Details(PRDetails inputParamsPRDetails)
+        {
+ 
+         inputParamsPRDetails.PRUploadedFiles.ForEach(x => x.FileByteArray = null);
